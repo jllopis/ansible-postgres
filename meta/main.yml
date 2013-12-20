@@ -5,12 +5,12 @@ galaxy_info:
   company: Datflow
   license: Apache Software Foundation License, Version 2
   min_ansible_version: 1.4.2 (or higher)
-  #platforms:
+  platforms:
   - name: Ubuntu
     versions:
-    - precise
-  #categories:
+     - precise
+  categories:
   - database
   - database:sql
-dependencies:
+dependencies: []
 
