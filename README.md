@@ -15,13 +15,16 @@ Ansible 1.4.2 or higher.
 
 1. Default installation
 
-    - hosts: database
-      roles: jllopis.postgres
+```yaml
+- hosts: database
+  roles: jllopis.postgres
+```
 
 2. Specifying PostgreSQL version
 
-   - hosts: database
-     roles: jllopis.postgres
-     pgversion: "9.3"
-
+```yaml
+- hosts: database
+  roles: jllopis.postgres
+  pgversion: "9.3"
+```
 
