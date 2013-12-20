@@ -1,0 +1,15 @@
+---
+# Install postgresql
+- name: add postgresql apt key
+  apt_key: url=http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc state=present
+
+- name: add postgresql repository
+  apt_repository: repo='deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' state=present update_cache=yes
+
+- name: install postgresql
+  apt: pkg={{ item }} state=present
+  with_items:
+    - postgresql-{{ pgversion }}
+    - postgresql-client-{{ pgversion }}
+    - postgresql-contrib-{{ pgversion }}
+    - pgtune

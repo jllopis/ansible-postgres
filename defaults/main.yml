@@ -1,0 +1,3 @@
+---
+# vars file for ansible-postgres
+pgversion: "9.3"
