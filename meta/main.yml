@@ -1,10 +1,10 @@
 ---
 galaxy_info:
   author: Joan Llopis
-  description: Role for PostgreSQL 9.x installation
+  description: Role for PostgreSQL 9.3 installation
   company: Datflow
   license: Apache Software Foundation License, Version 2
-  min_ansible_version: 1.4.2 (or higher)
+  min_ansible_version: 1.4.2
   platforms:
   - name: Ubuntu
     versions:
